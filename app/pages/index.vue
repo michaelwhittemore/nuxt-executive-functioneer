@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <h1>Executive Functioneer</h1>
+  <div class="main-display-container">
+    <MainDisplayBlock />
+    <MainDisplayBlock />
+    <MainDisplayBlock />
   </div>
-  pippoin go hgere hewo
 </template>

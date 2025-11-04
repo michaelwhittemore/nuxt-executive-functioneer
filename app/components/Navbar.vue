@@ -14,7 +14,7 @@
     width: 200px;
     height: 100vh;
     background-color: #a7d9d6;
-    border-right: 1px solid #e5e7eb;
+    border-right: 1px solid black;
 }
 
 .navbar-container {
@@ -33,6 +33,7 @@
     background-color: #d1f0ee;
     border-radius: 999px;
     display: block;
+    text-align: center;
 }
 
 .navbar-link:hover {

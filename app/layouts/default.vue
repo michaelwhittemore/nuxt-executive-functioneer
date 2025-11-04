@@ -17,7 +17,7 @@
 
 .content-container {
     flex: 1;
-    padding: 1.5rem;
+    padding: 0;
     width: 100%;
 }
 </style>
