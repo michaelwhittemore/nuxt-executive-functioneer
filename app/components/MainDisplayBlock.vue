@@ -1,6 +1,6 @@
 <template>
   <div class="main-display-block">
-    <h1>Main Display Block</h1>
+    <slot />
   </div>
 </template>
 
@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .main-display-block:nth-child(odd) {
   background-color: #c1bad9;
