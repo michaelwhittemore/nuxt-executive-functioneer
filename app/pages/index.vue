@@ -9,14 +9,15 @@
     <MainDisplayBlock>
       <div class="constrained-content brain-content">
         <h1>Block Two</h1>
-        <img src="/img/corgi.jpeg" alt="Corgi" />
+        <img src="/img/corgi.png" alt="Corgi" />
+        <!-- <img src="/img/happyDog.png" alt="Happy Dog" /> -->
       </div>
     </MainDisplayBlock>
     <MainDisplayBlock>
       <div class="constrained-content about-content">
-        <img src="/img/mikah2.jpeg" alt="Mikah Headshot" />
+        <img src="/img/mikah.jpeg" alt="Mikah Headshot" />
         <div class="about-content-text">
-          <p>About Me</p>
+          <h2>About Me</h2>
           <p>Excuse me, can you tell me the worst thing you've heard about me?
             Maybe that I'm a little harlot, homicidal queen
             You know I heard (heard) that I don't belong in this scene
