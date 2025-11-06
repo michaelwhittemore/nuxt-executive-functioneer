@@ -34,5 +34,12 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+  height: 100%;
+  min-height: 100vh;
+}
+
+#__nuxt {
+  height: 100%;
+  min-height: 100vh;
 }
 </style>

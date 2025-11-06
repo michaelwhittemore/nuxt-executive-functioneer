@@ -13,11 +13,16 @@
 .app-container {
     display: flex;
     min-height: 100vh;
+    height: 100%;
 }
 
 .content-container {
     flex: 1;
     padding: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
 }
 </style>

@@ -9,3 +9,12 @@
   margin: 0 auto;
   padding: 2rem;
 }
+.full-height {
+  height: 100%;
+}
+.purple-background {
+  background-color: #c1bad9;
+}
+.yellow-background {
+  background-color: #ebd0a0;
+}

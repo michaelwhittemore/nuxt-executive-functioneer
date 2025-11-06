@@ -1,12 +1,15 @@
 <template>
-  <div class="page-content-container">
-    <h1>Pricing and Services</h1>
-    <div class="pricing-container">
-      <div class="pricing-box rounded">
-        <p>This is an example text box with rounded edges. It contains pricing information and service details.</p>
-      </div>
-      <div class="pricing-box">
-        <p>This is another example text box. It displays additional information about services and pricing options.</p>
+  <div class="purple-background full-height">
+    <div class="page-content-container">
+      <h1>Pricing and Services</h1>
+      <div class="pricing-container">
+        <div class="pricing-box rounded">
+          <p>This is an example text box with rounded edges. It contains pricing information and service details.</p>
+        </div>
+        <div class="pricing-box">
+          <p>This is another example text box. It displays additional information about services and pricing options.
+          </p>
+        </div>
       </div>
     </div>
   </div>

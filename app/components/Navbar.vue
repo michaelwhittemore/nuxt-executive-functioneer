@@ -2,7 +2,7 @@
     <nav class="navbar">
         <div class="navbar-container">
             <NuxtLink to="/" class="navbar-link">Home</NuxtLink>
-            <NuxtLink to="/pricing" class="navbar-link">Pricing</NuxtLink>
+            <NuxtLink to="/pricing" class="navbar-link">Pricing and Services</NuxtLink>
             <NuxtLink to="/FAQs" class="navbar-link">FAQs</NuxtLink>
             <NuxtLink to="/contact" class="navbar-link">Contact</NuxtLink>
         </div>
