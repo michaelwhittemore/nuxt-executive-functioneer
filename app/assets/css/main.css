@@ -1,4 +1,11 @@
+/* Without margin and with less padding, check with Mikah which one she likes better */
+/* .page-content-container {
+  max-width: 1200px;
+  padding: 1rem;
+} */
+
 .page-content-container {
-    max-width: 1200px;
-    padding: 1rem;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
