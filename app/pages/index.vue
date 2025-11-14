@@ -8,8 +8,9 @@
     </MainDisplayBlock>
     <MainDisplayBlock>
       <div class="constrained-content brain-content">
-        <h1>Block Two</h1>
+        <h1>Welcome</h1>
         <img src="/img/corgi.png" alt="Corgi" />
+        <p>Do you have trouble focusing on tasks? Need an accountability buddy? Can't get a new habit to stick? I can help.</p>
         <!-- <img src="/img/happyDog.png" alt="Happy Dog" /> -->
       </div>
     </MainDisplayBlock>
@@ -18,15 +19,12 @@
         <img src="/img/mikah.jpeg" alt="Mikah Headshot" />
         <div class="about-content-text">
           <h2>About Me</h2>
-          <p>Excuse me, can you tell me the worst thing you've heard about me?
-            Maybe that I'm a little harlot, homicidal queen
-            You know I heard (heard) that I don't belong in this scene
-            Sex metal Barbie, (whore), attention fiend
-            (You know I) heard (heard) that I'm a hater's dream
-            Low class, white trash, I'm so obscene
-            (You know I) heard that I should be ashamed
-            Still they hold their fists in the air, screaming my name
-            Come on!</p>
+          <p>Hello I'm Mikah! (she/her). I started a decluttering business, and quickly realized that the main thing my
+            clients had in common was weapons-grade ADHD. I started reading, researching, and asking my ADHD-afflicted
+            friends questions to learn everything I could. My background is in project management, where I spend a lot
+            of time learning what's blocking someone from finishing a task and working with them to get past that block.
+            I live with my husband, two cats, and a snake. I enjoy reading, listening to power metal, and avoiding going
+            on hikes. </p>
         </div>
 
       </div>

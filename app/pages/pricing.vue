@@ -14,7 +14,7 @@ onMounted(() => {
       <h1>Pricing and Services</h1>
       <br></br> <!-- add a line break, probably format this better -->
       <h3>How much do you cost?</h3>
-      <p>Phi universal law constant occurrence
+      <p>TODO:Phi universal law constant occurrence
         design absent of flaws natural appearance
         with DNA and galaxies we approach infinity
         nothing split by unity is the constant creation
