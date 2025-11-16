@@ -35,18 +35,27 @@ onMounted(() => {
       <div class="pricing-container">
         <div class="pricing-box rounded yellow-pricing-box">
           <div class="centered-text-header"> Menu of Services</div>
+          <p>During a session, I can assist with:</p>
           <ul>
-            <li> Item one</li>
-            <li> Item two</li>
-            <li> Item three</li>
+            <li> Replying to difficult emails or texts </li>
+            <li> Forming a new habit (e.g. exercising, eating breakfast, flossing)</li>
+            <li>Body doubling (observing you until you complete a task)</li>
+            <li>Epic, personalized motivational speeches</li>
+            <li>Decreasing negative self-talk</li>
+            <li>Accountability and follow-up on important tasks</li>
+            <li>Sorting piles of stuff and making decisions about each object</li>
+            <li>Booking or preparing for a trip</li>
+            <li>Decisionmaking</li>
+            <li>Improving communication with co-workers</li>
           </ul>
+
+          <p><b>Please note:</b> for liability purposes, I cannot assist with tasks that expose me to proprietary data or financial information.</p>
         </div>
         <!-- <iframe src="https://calendly.com/mikah-mccabe/free-intro-call" style="width: 100%; min-width: 320px; height: 700px;"
             frameborder="0"></iframe> -->
         <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/mikah-mccabe/free-intro-call"
             style="width:90%;height:400px;"></div> -->
-        <div class="calendly-inline-widget pricing-box"
-        data-url="https://calendly.com/mikah-mccabe/free-intro-call">
+        <div class="calendly-inline-widget pricing-box" data-url="https://calendly.com/mikah-mccabe/free-intro-call">
 
         </div>
       </div>
