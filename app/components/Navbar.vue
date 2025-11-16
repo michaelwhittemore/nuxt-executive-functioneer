@@ -12,7 +12,7 @@
 <style scoped>
 .navbar {
     width: 200px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #a7d9d6;
     border-right: 1px solid black;
 }
