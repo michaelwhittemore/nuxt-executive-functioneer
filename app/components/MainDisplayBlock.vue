@@ -20,4 +20,13 @@
 .main-display-block:nth-child(even) {
   background-color: #ebd0a0;
 }
+
+/* On mobile, allow blocks to grow to fit content */
+@media (max-width: 768px) {
+  .main-display-block {
+    height: auto;
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+}
 </style>

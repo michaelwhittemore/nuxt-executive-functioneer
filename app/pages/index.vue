@@ -75,4 +75,46 @@
   flex-direction: column;
   justify-content: center;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .constrained-content {
+    height: auto;
+    min-height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .brain-content img {
+    max-height: 40vh;
+    margin-bottom: 1rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about-content img {
+    max-width: 100%;
+    max-height: 50vh;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .about-content-text {
+    text-align: center;
+  }
+
+  .brain-content h1,
+  .about-content-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .brain-content p,
+  .about-content-text p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
 </style>
