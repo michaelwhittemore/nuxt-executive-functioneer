@@ -2,6 +2,7 @@
     <nav class="navbar" :class="{ collapsed: isCollapsed }">
         <button class="toggle-button" @click="toggleSidebar" :aria-label="isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'">
             <span class="hamburger-icon">
+                <!-- Built out of three line-spans to make a hamburger icon -->
                 <span></span>
                 <span></span>
                 <span></span>
@@ -65,7 +66,7 @@ const toggleSidebar = () => {
 .toggle-button {
     position: absolute;
     top: 1rem;
-    right: 0.5rem;
+    left: 0.5rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -95,19 +96,6 @@ const toggleSidebar = () => {
     width: 100%;
     background-color: #1f2937;
     border-radius: 2px;
-    transition: all 0.3s;
-}
-
-.navbar.collapsed .hamburger-icon span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.navbar.collapsed .hamburger-icon span:nth-child(2) {
-    opacity: 0;
-}
-
-.navbar.collapsed .hamburger-icon span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .navbar-container {
