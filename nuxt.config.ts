@@ -4,5 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   devServer: {
     port: 3013,
-  }
+  },
+  modules: ['@nuxtjs/device']
 })

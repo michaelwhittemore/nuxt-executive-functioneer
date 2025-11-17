@@ -26,22 +26,13 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 
-const isCollapsed = ref(false)
+const device = useDevice()
 
-const checkMobile = () => {
-    if (typeof window !== 'undefined') {
-        return window.innerWidth <= 768
-    }
-    return false
-}
-
-onMounted(() => {
-    if (checkMobile()) {
-        isCollapsed.value = true
-    }
-})
+// Use device detection from @nuxtjs/device which works with SSR
+// Collapse on mobile/tablet, expand on desktop
+const isCollapsed = ref(device.isMobile || device.isTablet)
 
 const toggleSidebar = () => {
     isCollapsed.value = !isCollapsed.value
@@ -50,6 +41,8 @@ const toggleSidebar = () => {
 
 <style scoped>
 .navbar {
+    /* Lock width by setting width, min-width, and max-width to the same value.
+       This prevents the flex container from resizing the navbar based on content or available space. */
     width: 200px;
     min-width: 200px;
     max-width: 200px;

@@ -11,6 +11,7 @@
     "cloudflare-deploy": "npx nuxi build --preset=cloudflare_pages && npx wrangler pages deploy dist"
   },
   "dependencies": {
+    "@nuxtjs/device": "^3.2.4",
     "nuxt": "^4.2.0",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
