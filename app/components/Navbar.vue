@@ -51,16 +51,22 @@ const toggleSidebar = () => {
 <style scoped>
 .navbar {
     width: 200px;
+    min-width: 200px;
+    max-width: 200px;
     min-height: 100vh;
     background-color: #a7d9d6;
     border-right: 1px solid black;
-    transition: width 0.3s ease;
+    transition: width 0.3s ease, min-width 0.3s ease, max-width 0.3s ease;
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .navbar.collapsed {
     width: 60px;
+    min-width: 60px;
+    max-width: 60px;
 }
 
 .toggle-button {
