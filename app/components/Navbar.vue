@@ -1,13 +1,51 @@
 <template>
-    <nav class="navbar">
+    <nav class="navbar" :class="{ collapsed: isCollapsed }">
+        <button class="toggle-button" @click="toggleSidebar" :aria-label="isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'">
+            <span class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </button>
         <div class="navbar-container">
-            <NuxtLink to="/" class="navbar-link">Home</NuxtLink>
-            <NuxtLink to="/pricing" class="navbar-link">Pricing and Services</NuxtLink>
-            <NuxtLink to="/FAQs" class="navbar-link">FAQs</NuxtLink>
-            <NuxtLink to="/contact" class="navbar-link">Contact</NuxtLink>
+            <NuxtLink to="/" class="navbar-link">
+                <span class="link-text">Home</span>
+            </NuxtLink>
+            <NuxtLink to="/pricing" class="navbar-link">
+                <span class="link-text">Pricing and Services</span>
+            </NuxtLink>
+            <NuxtLink to="/FAQs" class="navbar-link">
+                <span class="link-text">FAQs</span>
+            </NuxtLink>
+            <NuxtLink to="/contact" class="navbar-link">
+                <span class="link-text">Contact</span>
+            </NuxtLink>
         </div>
     </nav>
 </template>
+
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const isCollapsed = ref(false)
+
+const checkMobile = () => {
+    if (typeof window !== 'undefined') {
+        return window.innerWidth <= 768
+    }
+    return false
+}
+
+onMounted(() => {
+    if (checkMobile()) {
+        isCollapsed.value = true
+    }
+})
+
+const toggleSidebar = () => {
+    isCollapsed.value = !isCollapsed.value
+}
+</script>
 
 <style scoped>
 .navbar {
@@ -15,6 +53,61 @@
     min-height: 100vh;
     background-color: #a7d9d6;
     border-right: 1px solid black;
+    transition: width 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar.collapsed {
+    width: 60px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.toggle-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 20px;
+}
+
+.hamburger-icon span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #1f2937;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.navbar.collapsed .hamburger-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar.collapsed .hamburger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar.collapsed .hamburger-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .navbar-container {
@@ -22,6 +115,7 @@
     flex-direction: column;
     padding: 1rem;
     gap: 0.75rem;
+    padding-top: 3.5rem;
 }
 
 .navbar-link {
@@ -34,6 +128,23 @@
     border-radius: 999px;
     display: block;
     text-align: center;
+    word-wrap: break-word;
+}
+
+.navbar.collapsed .navbar-link {
+    display: none;
+}
+
+.link-text {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.navbar.collapsed .link-text {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
 }
 
 .navbar-link:hover {
