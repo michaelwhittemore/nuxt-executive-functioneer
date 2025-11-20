@@ -2,9 +2,10 @@
 useHead({
   title: 'Executive Functioneer',
   meta: [
-    { name: 'description', content: 'This is the meta-description of the page' },
-    { property: 'og:title', content: 'This is the meta-title of the page' },
-    { property: 'og:description', content: 'This is the meta-description of the page' },
+    { name: 'description', content: 'ADHD coaching for adults' },
+    { property: 'og:title', content: 'Executive Functioneer - ADHD coaching for adults' },
+    { property: 'og:description', content: 'ADHD coaching for adults' },
+    { property: 'og:image', content: 'https://executivefunctioneer.com/img/brain.png' },
   ],
   link: [
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
