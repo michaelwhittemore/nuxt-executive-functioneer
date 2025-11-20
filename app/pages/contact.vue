@@ -10,6 +10,7 @@
         <p>Still not sure? I recommend reading the <NuxtLink to="/FAQs">FAQs</NuxtLink>.</p>
 
         <h3>Get yourself on my calendar</h3>
+        <CalendlyButton />
       </div>
 
     </div>
@@ -21,3 +22,4 @@
   padding-top: 1rem;
 }
 </style>
+

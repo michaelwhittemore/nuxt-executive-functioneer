@@ -1,11 +1,4 @@
 <script setup>
-import { onMounted } from 'vue';
-onMounted(() => {
-  const script = document.createElement('script');
-  script.src = 'https://assets.calendly.com/assets/external/widget.js';
-  script.async = true;
-  document.body.appendChild(script);
-});
 </script>
 
 <template>
@@ -49,16 +42,12 @@ onMounted(() => {
             <li>Improving communication with co-workers</li>
           </ul>
 
-          <p><b>Please note:</b> for liability purposes, I cannot assist with tasks that expose me to proprietary data or financial information.</p>
+          <p><b>Please note:</b> for liability purposes, I cannot assist with tasks that expose me to proprietary data
+            or financial information.</p>
         </div>
-        <!-- <iframe src="https://calendly.com/mikah-mccabe/free-intro-call" style="width: 100%; min-width: 320px; height: 700px;"
-            frameborder="0"></iframe> -->
-        <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/mikah-mccabe/free-intro-call"
-            style="width:90%;height:400px;"></div> -->
-        <div class="calendly-inline-widget pricing-box" data-url="https://calendly.com/mikah-mccabe/free-intro-call">
-
-        </div>
+        
       </div>
+      <CalendlyButton />
     </div>
   </div>
 </template>
