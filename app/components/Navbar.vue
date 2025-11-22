@@ -21,6 +21,9 @@
             <NuxtLink to="/contact" class="navbar-link">
                 <span class="link-text">Contact</span>
             </NuxtLink>
+            <NuxtLink to="/testimonials" class="navbar-link">
+                <span class="link-text">Testimonials</span>
+            </NuxtLink>
         </div>
     </nav>
 </template>

@@ -16,7 +16,7 @@
         <div class="pricing-box rounded yellow-pricing-box">
           <div class="centered-text-header"> Menu of Services</div>
           <p>During a session, I can assist with:</p>
-          <ul>
+          <ul class="pricing-list">
             <li> Replying to difficult emails or texts </li>
             <li> Forming a new habit (e.g. exercising, eating breakfast, flossing)</li>
             <li>Body doubling (observing you until you complete a task)</li>
@@ -40,6 +40,9 @@
 </template>
 
 <style scoped>
+.pricing-list {
+  list-style-position: inside
+}
 .pricing-container {
   display: flex;
   gap: 2rem;
