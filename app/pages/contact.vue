@@ -8,8 +8,6 @@
           prepare anything in advance. </p>
 
         <p>Still not sure? I recommend reading the <NuxtLink to="/FAQs">FAQs</NuxtLink>.</p>
-
-        <h3>Get yourself on my calendar</h3>
         <CalendlyButton />
       </div>
 
