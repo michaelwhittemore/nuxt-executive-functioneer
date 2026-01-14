@@ -7,12 +7,11 @@
 <style scoped>
 .main-display-block {
   width: 100%;
-  height: calc(100vh / 3);
+  min-height: calc(100vh / 3);
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 .main-display-block:nth-child(odd) {
   background-color: #c1bad9;

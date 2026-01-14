@@ -7,30 +7,34 @@
       <h1>Pricing and Services</h1>
       <br></br> <!-- add a line break, probably format this better -->
       <h3>How much do you cost?</h3>
-      <p>I charge a flat $50 rate <b>per session</b>, due at the end of a given session. A coaching session is defined as an
-        online video in which I provide gentle, compassionate encouragement and accountability to achieve one or more of
-        the menu items below.</p> <br></br>
-      <p>If you're currently in the San Francisco Bay area, ask me about in-person sessions! These cost $50 <b>per hour</b> and
-        allow me to act as a specialized organizer for physical items or per-hour rentable body double.</p>
+      <p>In-person decluttering sessions cost <b>$50 per hour </b>with a 2-hour minimum. I also offer carting off a load
+        of
+        items to a donation center for a $25 flat fee per trip.</p> <br></br>
+      <h3>Where do you operate?</h3>
+      <p>I can travel to any home in the San Francisco Bay Area.
+      </p>
       <div class="pricing-container">
         <div class="pricing-box rounded yellow-pricing-box">
           <div class="centered-text-header"> Menu of Services</div>
-          <p>During a session, I can assist with:</p>
+          <p>During a session, I can help you with:</p>
           <ul class="pricing-list">
-            <li> Replying to difficult emails or texts </li>
-            <li> Forming a new habit (e.g. exercising, eating breakfast, flossing)</li>
+            <li>Sorting piles of stuff and helping you make decisions about each object</li>
             <li>Body doubling (observing you until you complete a task)</li>
-            <li>Epic, personalized motivational speeches</li>
+            <li>Replying to difficult emails or texts</li>
+            <li>Advice on forming a new habit (e.g. exercising, eating breakfast, flossing)</li>
             <li>Decreasing negative self-talk</li>
             <li>Accountability and follow-up on important tasks</li>
-            <li>Sorting piles of stuff and making decisions about each object</li>
             <li>Booking or preparing for a trip</li>
-            <li>Decisionmaking</li>
-            <li>Improving communication with co-workers</li>
+            <li>Prioritizing personal or business tasks</li>
           </ul>
+          <br />
+          <p><b>Please note - </b> for liability purposes, I cannot assist with tasks that expose me to:</p>
+            <ul class="pricing-list">
+              <li>Proprietary data or sensitive financial information</li>
+              <li>Biohazards such as loose sharps, active bedbug/flea/scabies infestations, bodily fluids</li>
+              <li>Active crisis situations requiring medical or psychiatric intervention</li>
 
-          <p><b>Please note:</b> for liability purposes, I cannot assist with tasks that expose me to proprietary data
-            or financial information.</p>
+            </ul>
         </div>
 
       </div>
@@ -43,6 +47,7 @@
 .pricing-list {
   list-style-position: inside
 }
+
 .pricing-container {
   display: flex;
   gap: 2rem;

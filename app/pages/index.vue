@@ -10,7 +10,9 @@
       <div class="constrained-content brain-content">
         <h1>Welcome</h1>
         <img src="/img/corgi.png" alt="Corgi" />
-        <p>Do you have trouble focusing on tasks? Need an accountability buddy? Can't get a new habit to stick? I can help.</p>
+        <p>Do you struggle with the stuff in your home? Thought about hiring someone to clean or declutter, but
+          overwhelmed and unsure where to start? I can help. I specialize in helping individuals with ADHD in the Bay
+          Area <b> win vs. stuff</b>. </p>
         <!-- <img src="/img/happyDog.png" alt="Happy Dog" /> -->
       </div>
     </MainDisplayBlock>
@@ -35,15 +37,24 @@
 <style scoped>
 .constrained-content {
   width: 100%;
-  height: 100%;
+  max-width: 100%;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .brain-content {
   flex-direction: column;
+}
+
+.brain-content p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .brain-content img {
@@ -71,9 +82,16 @@
 
 .about-content-text {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.about-content-text p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 /* Mobile responsive styles */
@@ -111,10 +129,13 @@
     margin-bottom: 1rem;
   }
 
-  .brain-content p,
-  .about-content-text p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
+.brain-content p,
+.about-content-text p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
 }
 </style>
