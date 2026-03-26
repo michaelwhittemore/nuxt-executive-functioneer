@@ -18,14 +18,24 @@
     <div class="page-content-container">
       <h1>Returning Customers</h1>
       <div class="contact-container">
-        <p>Worked with me before, but lost my contact info? <b>
-          <a
-              href="mailto:mikah.mccabe@gmail.com?subject=About Your Decluttering Business">Email Me
-            </a></b></p>
-            <CalendlyButton clientType="existing" />
+        <p>Worked with me before? Schedule a return session here!</p>
+        <div class="contact-container">
+          <CalendlyButton clientType="existing" />
+        </div>
       </div>
 
+
     </div>
+
+    <div class="page-content-container">
+      <p>Any other questions? <b>
+          <a href="mailto:mikah.mccabe@gmail.com?subject=About Your Decluttering Business">Email Me
+          </a>
+        </b>
+      </p>
+
+    </div>
+
   </div>
 
 </template>
