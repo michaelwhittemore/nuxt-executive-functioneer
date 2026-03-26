@@ -9,7 +9,7 @@
       <h3>How much do you cost?</h3>
       <p>In-person decluttering sessions cost <b>$50 per hour </b>with a 2-hour minimum. I also offer carting off a load
         of
-        items to a donation center for a $25 flat fee per trip.</p> <br></br>
+        items to a donation center for a $50 flat fee per trip.</p> <br></br>
       <h3>Where do you operate?</h3>
       <p>I can travel to any home in the San Francisco Bay Area.
       </p>

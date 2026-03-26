@@ -29,9 +29,10 @@
 
     <div class="page-content-container">
       <p>Any other questions? <b>
-          <a href="mailto:mikah.mccabe@gmail.com?subject=About Your Decluttering Business">Email Me
+          <a href="mailto:mikah.mccabe@gmail.com?subject=About%20Your%20Decluttering%20Business">Email Me
           </a>
         </b>
+        (mikah.mccabe@gmail.com)
       </p>
 
     </div>
