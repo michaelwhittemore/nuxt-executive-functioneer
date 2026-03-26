@@ -1,7 +1,30 @@
+<script setup>
+const props = defineProps({
+    clientType: {
+        type: String,
+        default: "new"
+    }
+});
+
+const calendlyLink = computed(() => {
+    if (props.clientType === "existing") {
+        return "https://calendly.com/mikah-mccabe/decluttering";
+    }
+    return "https://calendly.com/mikah-mccabe/free-intro-call";
+});
+
+const buttonText = computed(() => {
+    if (props.clientType === "existing") {
+        return "Click here to schedule a decluttering session";
+    }
+    return "Click here to schedule a free intro call";
+});
+</script>
+
 <template>
     <div class="calendly-button">
-        <a href="https://calendly.com/mikah-mccabe/free-intro-call" target="_blank">
-            <b>Click here to schedule a free intro call</b></a>
+        <a :href="calendlyLink" target="_blank" rel="noopener noreferrer">
+            <b>{{ buttonText }}</b></a>
     </div>
 </template>
 
