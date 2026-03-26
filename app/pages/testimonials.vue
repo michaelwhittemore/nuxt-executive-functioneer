@@ -2,20 +2,32 @@
     <div class="yellow-background full-height">
         <div class="page-content-container">
             <h1>Testimonials</h1>
-            <div class="testimonial-container">
-                <div class="testimonial-box rounded yellow-pricing-box">
-                    Mikah is an incredibly effective coach! She gracefully introduces emotion regulation techniques and
-                    can help with grounding when I'm too stressed to do things. At the same time, she's task-focused and
-                    not afraid to get into the thick of things with mess. I love how seamlessly she flips between
-                    managing emotional overwhelm and actually getting tasks accomplished. In my experience, that's a
-                    really rare gift, to be able to give both comfort and structure as they're needed. <br />
-                    - <b>Theo Goddard, PhD</b>
-                </div>
-            </div>
+            <p>Click the arrows below to scroll through testimonials.</p>
+            <ClientOnly>
+                <div
+                    class="senja-embed"
+                    data-id="bcf7164b-35a2-4b97-8f00-cf44518d85d1"
+                    data-mode="shadow"
+                    data-lazyload="false"
+                ></div>
+            </ClientOnly>
         </div>
     </div>
-
 </template>
+
+<script setup>
+onMounted(() => {
+    const existingScript = document.getElementById("senja-widget-script")
+    if (existingScript) return
+
+    const script = document.createElement("script")
+    script.id = "senja-widget-script"
+    script.src = "https://widget.senja.io/widget/bcf7164b-35a2-4b97-8f00-cf44518d85d1/platform.js"
+    script.type = "text/javascript"
+    script.async = true
+    document.body.appendChild(script)
+})
+</script>
 
 <style scoped>
 .testimonial-container {
@@ -34,5 +46,11 @@
 
 .testimonial-box.rounded {
     border-radius: 12px;
+}
+
+.senja-embed {
+    display: block;
+    width: 100%;
+    min-height: 320px;
 }
 </style>
